@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-bitter: "Bitter", serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-dm-mono: "DM Mono", monospace;
+
+  --color-off-white: rgb(232, 232, 227); /* 1 */
+  --color-light-sage: rgb(192, 198, 191); /* 2 */
+  --color-sage: rgb(151, 166, 159); /* 3 */
+  --color-muted-teal: rgb(111, 135, 133); /* 4 */
+  --color-steel-blue: rgb(75, 103, 110); /* 5 */
+  --color-deep-teal: rgb(47, 72, 88); /* 6 */
+}
