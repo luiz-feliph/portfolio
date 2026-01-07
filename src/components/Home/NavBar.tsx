@@ -18,7 +18,7 @@ function NavBar() {
         aria-label="Toggle navigation menu"
         onClick={handleMenu}
         className="
-          fixed top-9 right-8 z-[999]
+          fixed top-[15px] right-4 z-[999]
           flex h-[50px] w-[50px] flex-col items-center justify-center gap-2
           cursor-pointer rounded-full bg-steel-blue
           md:hidden

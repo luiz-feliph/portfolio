@@ -3,7 +3,8 @@ import NavBar from "./NavBar"
 function Header() {
 
   return (
-    <header className="flex items-center bg-off-white w-full h-[80px] px-[60px]">
+    <header className="flex items-center bg-off-white h-[80px] px-[20px]">
+      <h3 className="font-bitter text-steel-blue md:hidden">Full Stack Developer</h3>
       <NavBar />
     </header>
   )
