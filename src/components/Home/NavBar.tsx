@@ -40,15 +40,15 @@ function NavBar() {
         />
       </button>
 
-      <nav aria-hidden={!isOpen}>
+      <nav aria-hidden={!isOpen} className="w-full">
         <div
           className={`
             fixed inset-0 z-50
             h-screen w-full
-            bg-white/30 backdrop-blur-sm
+            bg-white/30 backdrop-blur-md
             transition-transform duration-300
             ${isOpen ? "handle-menu" : "translate-x-full"}
-            md:translate-x-0 md:bg-transparent md:backdrop-blur-none 
+            md:static md:h-[80px] md:translate-x-0 md:bg-transparent md:backdrop-blur-none 
           `}
         >
           <span
@@ -74,7 +74,7 @@ function NavBar() {
             className="
               flex h-screen flex-col items-center justify-end
               gap-[100px] py-[40px]
-              md:h-[80px] md:flex-row md:justify-between md:py-0 md:px-[40px]
+              md:h-[80px] md:flex-row md:justify-between md:py-0 
             "
           >
             <ul
