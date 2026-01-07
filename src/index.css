@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root:has(.handle-menu) {
+    overflow:hidden;
+  }
+
 @theme {
   --font-bitter: "Bitter", serif;
   --font-dm-sans: "DM Sans", sans-serif;

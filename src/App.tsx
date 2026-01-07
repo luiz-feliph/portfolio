@@ -1,10 +1,10 @@
-import MainRoutes from "./routes/MainRoutes"
+import Home from "./pages/Home"
 
 function App() {
 
   return (
-    <div>
-      <MainRoutes/>
+    <div className="min-h-[2000px]">
+      <Home />
     </div>
   )
 }
