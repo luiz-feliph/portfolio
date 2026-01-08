@@ -1,7 +1,11 @@
 import luizFelipeLogo from "../../assets/icons/luiz-felipe.svg";
 import landscape from "../../assets/images/landscape.webp";
+import useFetch from "../../hooks/useFetch";
 
 function Main() {
+
+  const userData = useFetch("https://api.github.com/users/luiz-feliph");
+
   return (
     <main className="bg-off-white">
       <section
@@ -72,7 +76,7 @@ function Main() {
               Projects
             </h2>
             <p className="font-bitter text-8xl font-bold text-off-white md:text-[100px]">
-              8
+              {userData?.publicRepos ? userData.publicRepos : "?"}
             </p>
           </article>
 
@@ -89,7 +93,7 @@ function Main() {
             </h2>
 
             <p className="relative font-bitter text-8xl font-bold text-off-white md:text-[100px]">
-              2
+              {userData?.years ? userData.years : "?"}
               <span
                 className="
                   absolute bottom-[12px] -right-[35px]
@@ -97,7 +101,7 @@ function Main() {
                   md:-right-[42px] md:text-base
                 "
               >
-                years
+                {userData?.years === 1 ? "year" : "years"}
               </span>
             </p>
           </article>
