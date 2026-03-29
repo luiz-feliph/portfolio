@@ -11,9 +11,8 @@ function Main() {
       <section
         className="
           flex flex-col items-center justify-center
-          gap-[60px] pt-[60px]
-          md:pt-[80px]
-          xl:gap-[40px] xl:pt-[60px]
+          gap-[60px] py-[80px]
+          xl:gap-[40px]
         "
       >
         <div
