@@ -18,3 +18,18 @@
   --color-steel-blue: rgb(75, 103, 110); /* 5 */
   --color-deep-teal: rgb(47, 72, 88); /* 6 */
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 12px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-deep-teal);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+  }
+}

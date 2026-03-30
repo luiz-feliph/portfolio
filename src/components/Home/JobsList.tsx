@@ -1,0 +1,28 @@
+import JobItem from "./JobItem";
+import JobsJson from "../../data/jobs.json";
+import type { JobItemData } from "../../types/JobItemData";
+
+function JobsList() {
+  return (
+    <div className="relative max-w-[1200px]">
+      <span className="absolute inset-y-[8px] left-[8px] w-[3px] bg-off-white lg:w-[5px] lg:left-[12px]"></span>
+
+      <section className="h-[250px] overflow-y-scroll scrollbar lg:h-[400px] xl:h-[500px]">
+        {JobsJson.map((item: JobItemData) => {
+          return (
+            <JobItem
+              period={item.period}
+              organization={item.organization}
+              role={item.role}
+              responsibilities={item.responsibilities}
+            />
+          );
+        })}
+      </section>
+
+      <span className="absolute bottom-0 left-0 right-[12px] h-[50px] bg-gradient-to-t from-light-sage to-transparent lg:h-[80px]"></span>
+    </div>
+  );
+}
+
+export default JobsList;
