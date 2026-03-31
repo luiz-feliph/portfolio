@@ -1,4 +1,5 @@
 import Jobs from "./JobsList";
+import Stack from "./Stack";
 
 function Experience() {
   return (
@@ -10,6 +11,7 @@ function Experience() {
         Experience
       </h1>
       <Jobs />
+      <Stack />
     </div>
   );
 }
