@@ -1,4 +1,4 @@
-import Jobs from "./JobsList";
+import JobsList from "./JobsList";
 import Stack from "./Stack";
 
 function Experience() {
@@ -10,7 +10,7 @@ function Experience() {
       <h1 className="font-dm-sans text-deep-teal text-[50px] font-bold mb-[32px] sm:text-[80px] sm:mb-[48px] lg:text-[100px] lg:mb-[64px] 2xl:text-[120px]">
         Experience
       </h1>
-      <Jobs />
+      <JobsList />
       <Stack />
     </div>
   );

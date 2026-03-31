@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Front-end",
+    "images": [
+      { "path": "src/assets/icons/react.svg", "alt": "React" },
+      { "path": "src/assets/icons/typescript.svg", "alt": "TypeScript" },
+      { "path": "src/assets/icons/tailwindcss.svg", "alt": "Tailwind CSS" },
+      { "path": "src/assets/icons/javascript.svg", "alt": "JavaScript" }
+    ]
+  },
+  {
+    "title": "Back-end",
+    "images": [
+      { "path": "src/assets/icons/java.svg", "alt": "Java" },
+      { "path": "src/assets/icons/spring.svg", "alt": "Spring" },
+      { "path": "src/assets/icons/spring-boot.svg", "alt": "Spring Boot" }
+    ]
+  },
+  {
+    "title": "Data",
+    "images": [
+      { "path": "src/assets/icons/mysql.svg", "alt": "MySQL" },
+      { "path": "src/assets/icons/postgresql.svg", "alt": "PostgreSQL" }
+    ]
+  }
+]
