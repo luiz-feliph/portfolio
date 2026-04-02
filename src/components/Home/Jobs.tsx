@@ -2,7 +2,7 @@ import JobItem from "./JobItem";
 import JobsJson from "../../data/jobs.json";
 import type { JobItemData } from "../../types/JobItemData";
 
-function JobsList() {
+function Jobs() {
   return (
     <div className="relative max-w-[1200px] mb-[64px] md:mb-[80px] xl:mb-[100px] 2xl:mb-[120px]">
       <span className="absolute inset-y-[8px] left-[8px] w-[3px] bg-off-white lg:w-[5px] lg:left-[12px]"></span>
@@ -25,4 +25,4 @@ function JobsList() {
   );
 }
 
-export default JobsList;
+export default Jobs;
