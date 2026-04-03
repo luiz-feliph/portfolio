@@ -8,13 +8,14 @@ function Jobs() {
       <span className="absolute inset-y-[8px] left-[8px] w-[3px] bg-off-white lg:w-[5px] lg:left-[12px]"></span>
 
       <section className="h-[250px] overflow-y-scroll scrollbar lg:h-[400px] xl:h-[500px]">
-        {JobsJson.map((item: JobItemData) => {
+        {JobsJson.map((item: JobItemData, index) => {
           return (
             <JobItem
               period={item.period}
               organization={item.organization}
               role={item.role}
               responsibilities={item.responsibilities}
+              key={index}
             />
           );
         })}

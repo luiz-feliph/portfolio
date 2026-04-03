@@ -58,8 +58,8 @@ function Main() {
               <br />
               Stack
               <br />
-              <span className="2xl:hidden">Dev</span>
-              <span className="hidden 2xl:inline">Developer</span>
+              <span className="3xl:hidden">Dev</span>
+              <span className="hidden 3xl:inline">Developer</span>
             </h1>
           </div>
 
