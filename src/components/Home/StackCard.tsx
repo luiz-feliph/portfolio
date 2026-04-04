@@ -1,4 +1,6 @@
-import type { colorConfiguration, StackCardData, Image } from "../../types/StackCardData";
+import type { colorConfiguration, StackCardData } from "../../types/StackCardData";
+import type { Image } from "../../types/ImageType";
+
 
 type StackCardProps = {
   data: StackCardData;

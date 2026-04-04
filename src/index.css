@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root:has(.handle-menu) {
-    overflow:hidden;
-  }
+  overflow: hidden;
+}
 
 @theme {
   --breakpoint-xs: 32rem;
@@ -34,5 +34,16 @@
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
+  }
+
+  .outlined-text {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-deep-teal);
+  }
+
+  @media (min-width: 500px) {
+    .outlined-text {
+      -webkit-text-stroke-width: 2px;
+    }
   }
 }
