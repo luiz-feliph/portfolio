@@ -10,7 +10,13 @@ function Stack() {
           return <StackCard data={item} colorIndex={index} key={index} />;
         })}
       </div>
-      <div className="font-bitter font-semibold text-[16px] text-deep-teal text-justify hyphens-auto sm:text-[20px] lg:text-[24px] lg:bg-deep-teal lg:text-off-white lg:rounded-lg lg:px-[32px] lg:py-[48px]">Others: Git/GitHub • Agile • TDD • Testing • Rest APIs • Figma • Data Modeling</div>
+      <div className="font-dm-sans font-semibold text-[16px] text-deep-teal text-justify hyphens-auto sm:text-[20px] lg:text-[24px] lg:bg-deep-teal lg:text-off-white lg:rounded-lg lg:px-[32px] lg:py-[48px]">
+        Others:
+        <span className="text-light-sage">
+          {" "}
+          Git/GitHub | Agile | TDD | Testing | Rest APIs | Figma | Data Modeling
+        </span>
+      </div>
     </div>
   );
 }
