@@ -7,12 +7,12 @@ function About() {
       id="about"
     >
       <img
-        className="absolute right-[20px] top-[-60px] w-[120px] md:w-[150px] md:top-auto md:bottom-[-75px]"
+        className="absolute right-[20px] top-[-60px] w-[120px] md:w-[150px] md:top-auto md:bottom-[-75px] 2xl:right-[64px]"
         src={decoration}
         alt="decoration"
       />
 
-      <div className="flex-1 text-off-white mt-[64px] mb-[48px] sm:my-[80px] xl:my-[120px]">
+      <div className="flex-1 text-off-white mt-[64px] mb-[48px] sm:my-[100px] xl:my-[148px] 2xl:my-[200px]">
         <h1 className="font-dm-sans text-[60px] font-bold mb-[32px] sm:text-[80px] sm:mb-[48px] lg:text-[100px] lg:mb-[64px] 2xl:text-[120px]">
           About
         </h1>
