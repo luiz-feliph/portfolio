@@ -13,7 +13,7 @@ function About() {
       />
 
       <div className="flex-1 text-off-white mt-[64px] mb-[48px] sm:my-[100px] xl:my-[148px] 2xl:my-[200px]">
-        <h1 className="font-dm-sans text-[60px] font-bold mb-[32px] sm:text-[80px] sm:mb-[48px] lg:text-[100px] lg:mb-[64px] 2xl:text-[120px]">
+        <h1 className="cursor-default font-dm-sans text-[60px] font-bold mb-[32px] sm:text-[80px] sm:mb-[48px] lg:text-[100px] lg:mb-[64px] 2xl:text-[120px]">
           About
         </h1>
         <p
@@ -29,7 +29,7 @@ function About() {
           application.
         </p>
       </div>
-      <div className="flex-1 flex w-full justify-center">
+      <div className="cursor-default flex-1 flex w-full justify-center">
         <div className="flex flex-col gap-[10px] items-center min-w-[200px] h-[350px] mb-[64px] sm:mb-0 sm:h-[400px] xl:min-w-[250px] xl:h-[500px]">
           <div className="flex flex-col items-center justify-between w-full h-[70%] p-[10px] text-steel-blue text-[24px] font-bold bg-light-sage rounded-xl xl:text-[28px]">
             <h3 className="font-bitter">Back-end</h3>

@@ -7,7 +7,7 @@ function Main() {
   const userData = useFetch("https://api.github.com/users/luiz-feliph");
 
   return (
-    <main className="bg-off-white">
+    <main className="bg-off-white cursor-default">
       <section
         className="
           flex flex-col items-center justify-center
