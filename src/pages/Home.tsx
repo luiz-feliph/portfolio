@@ -1,4 +1,5 @@
 import About from "../components/Home/About";
+import Contact from "../components/Home/Contact";
 import Education from "../components/Home/Education";
 import Experience from "../components/Home/Experience";
 import Header from "../components/Home/Header";
@@ -12,6 +13,7 @@ function Home() {
       <About />
       <Experience />
       <Education />
+      <Contact />
     </div>
   );
 }

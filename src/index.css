@@ -23,17 +23,34 @@
 }
 
 @layer utilities {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-off-white);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-deep-teal);
+    border-radius: 0;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+  }
+
   .scrollbar::-webkit-scrollbar {
     width: 12px;
     height: 20px;
   }
 
-  .scrollbar::-webkit-scrollbar-thumb {
-    background: var(--color-deep-teal);
+  .scrollbar::-webkit-scrollbar-track {
+    background: none;
   }
 
-  .scrollbar::-webkit-scrollbar-thumb:hover {
-    cursor: pointer;
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-deep-teal);
   }
 
   .outlined-text {
