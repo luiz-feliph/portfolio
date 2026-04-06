@@ -2,8 +2,10 @@ import { ChevronUp, ChevronDown } from "lucide-react";
 import { useRef, useState } from "react";
 import ProjectItem from "./ProjectItem";
 import ProjectJson from "../../data/projects.json";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
   const [index, setIndex] = useState<number>(0);
   const sliderRef = useRef<HTMLDivElement>(null);
 
@@ -44,7 +46,7 @@ function Projects() {
   return (
     <div className="xl:px-[40px] 2xl:px-[80px] 3xl:px-[160px]">
       <h2 className="text-center font-bitter font-bold text-[32px] text-deep-teal mb-[16px] sm:text-[48px] lg:text-[64px]">
-        Projects
+        {t("Projects")}
       </h2>
       <div className="flex flex-col items-center bg-off-white h-[250px] rounded-lg px-[8px] xs:h-[300px] sm:h-[400px] custom-md:h-[544px] custom-md:flex-row custom-md:px-0 custom-md:py-[20px] lg:h-[598px]">
         <button

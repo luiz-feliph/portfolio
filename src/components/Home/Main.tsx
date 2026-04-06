@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import luizFelipeLogo from "../../assets/icons/luiz-felipe.svg";
 import landscape from "../../assets/images/landscape.webp";
 import useFetch from "../../hooks/useFetch";
 
 function Main() {
 
+  const { t } = useTranslation();
   const userData = useFetch("https://api.github.com/users/luiz-feliph");
 
   return (
@@ -54,12 +56,12 @@ function Main() {
                 text-steel-blue
               "
             >
-              Full
+              {t("Full")}
               <br />
-              Stack
+              {t("Stack")}
               <br />
-              <span className="3xl:hidden">Dev</span>
-              <span className="hidden 3xl:inline">Developer</span>
+              <span className="3xl:hidden">{t("Dev")}</span>
+              <span className="hidden 3xl:inline">{t("Developer")}</span>
             </h1>
           </div>
 
@@ -72,7 +74,7 @@ function Main() {
             "
           >
             <h2 className="font-bitter text-xl font-bold text-off-white md:text-4xl">
-              Projects
+              {t("Projects")}
             </h2>
             <p className="font-bitter text-8xl font-bold text-off-white md:text-[100px]">
               {userData?.publicRepos ? userData.publicRepos : "?"}
@@ -88,7 +90,7 @@ function Main() {
             "
           >
             <h2 className="font-bitter text-xl font-bold text-off-white md:text-4xl">
-              Experience
+              {t("Experience")}
             </h2>
 
             <p className="relative font-bitter text-8xl font-bold text-off-white md:text-[100px]">
@@ -100,7 +102,7 @@ function Main() {
                   md:-right-[42px] md:text-base
                 "
               >
-                {userData?.years === 1 ? "year" : "years"}
+                {userData?.years === 1 ? t("year") : t("years")}
               </span>
             </p>
           </article>

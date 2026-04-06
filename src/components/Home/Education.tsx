@@ -1,29 +1,32 @@
+import { useTranslation } from "react-i18next";
 import EducationCard from "./EducationCard";
 import { Languages, BookCheck } from "lucide-react";
 
 function Education() {
+  const { t } = useTranslation();
+
   return (
     <div
       className="flex flex-col items-center gap-[32px] cursor-default bg-deep-teal px-[20px] py-[64px] sm:px-[40px] sm:py-[100px] lg:px-[60px] xl:pb-[148px] 2xl:pb-[200px]"
       id="education"
     >
       <h1 className="self-start mb-[32px] font-dm-sans text-[60px] font-bold text-off-white sm:mb-[48px] sm:text-[80px] lg:mb-[64px] lg:text-[100px] 2xl:text-[120px]">
-        Education
+        {t("Education")}
       </h1>
 
       <div className="flex flex-col gap-[48px]">
         <div className="flex flex-col gap-[20px] md:flex-row lg:gap-[32px] 2xl:gap-[48px]">
           <EducationCard
             period="2022-2025"
-            degree="Technical High School"
-            course="Computer Maintence and Support"
+            degree={t("Technical")}
+            course={t("Support")}
             api="8.4"
             institute="IFS"
           />
           <EducationCard
             period="2025-2028"
-            degree="Bachelor"
-            course="Information Systems"
+            degree={t("Bachelor")}
+            course={t("InformationSystems")}
             api="8.0"
             institute="UFS"
           />
@@ -37,15 +40,15 @@ function Education() {
 
             <div>
               <h2 className="mb-[6px] font-dm-sans text-[36px] font-bold sm:text-[48px] lg:text-[64px]">
-                Languages
+                {t("Languages")}
               </h2>
 
               <ul className="font-bitter text-[20px] sm:text-[24px] lg:text-[28px]">
                 <li>
-                  Portuguese <span className="text-sage">| Native</span>
+                  {t("Portuguese")} <span className="text-sage">| {t("Native")}</span>
                 </li>
                 <li>
-                  English <span className="text-sage">| B2</span>
+                  {t("English")} <span className="text-sage">| B2</span>
                 </li>
               </ul>
             </div>
@@ -58,7 +61,7 @@ function Education() {
 
             <div>
               <h2 className="mb-[6px] font-dm-sans text-[36px] font-bold sm:text-[48px] lg:text-[64px]">
-                Courses
+                {t("Courses")}
               </h2>
 
               <ul className="font-bitter text-[20px] sm:text-[24px] lg:text-[28px]">

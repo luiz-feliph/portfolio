@@ -1,8 +1,11 @@
 import StackCard from "./StackCard";
 import StackData from "../../data/stack.json";
 import type { StackCardData } from "../../types/StackCardData";
+import { useTranslation } from "react-i18next";
 
 function Stack() {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col gap-[18px] lg:gap-[12px] mb-[64px] md:mb-[80px] xl:mb-[100px] 2xl:mb-[120px]">
       <div className="flex flex-col gap-[12px] lg:flex-row lg:justify-between">
@@ -11,10 +14,10 @@ function Stack() {
         })}
       </div>
       <div className="font-dm-sans font-semibold text-[16px] text-deep-teal text-justify hyphens-auto sm:text-[20px] lg:text-[24px] lg:bg-deep-teal lg:text-off-white lg:rounded-lg lg:px-[32px] lg:py-[48px]">
-        Others:
+        {t("Others")}:
         <span className="text-steel-blue lg:text-light-sage">
           {" "}
-          Git/GitHub | Agile | TDD | Testing | Rest APIs | Figma | Data Modeling
+          Git/GitHub | Agile | TDD | {t("Testing")} | Rest APIs | Figma | {t("DataModeling")}
         </span>
       </div>
     </div>

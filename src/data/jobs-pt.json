@@ -1,0 +1,48 @@
+[
+  {
+    "period": "Fev. 2026 - Presente",
+    "role": "Suporte Técnico",
+    "organization": "Instituto Federal de Sergipe (IFS)",
+    "responsibilities": [
+      "Atuei em um ambiente de alta demanda, prestando suporte técnico institucional",
+      "Diagnostiquei e resolvi problemas de hardware, software e conectividade de rede",
+      "Organizei fluxos digitais e gerenciei sistemas de e-mail institucional",
+      "Apoiei a emissão de certificados acadêmicos"
+    ]
+  },
+  {
+    "period": "Jan. 2026 - Presente",
+    "role": "Desenvolvedor WordPress | Voluntário",
+    "organization": "ItaTech Jr - Empresa Júnior da UFS",
+    "responsibilities": [
+      "Contribuí com projetos reais de desenvolvimento web para clientes",
+      "Desenvolvi e customizei sites utilizando WordPress",
+      "Levantei requisitos e entreguei soluções completas",
+      "Colaborei em equipe seguindo um fluxo de projeto estruturado"
+    ]
+  },
+  {
+    "period": "Jan. 2026",
+    "role": "API REST com Spring Boot",
+    "organization": "Projeto Pessoal",
+    "responsibilities": [
+      "Projetei e desenvolvi uma API REST completa seguindo boas práticas arquiteturais",
+      "Implementei múltiplos endpoints CRUD",
+      "Tratei exceções e estruturei a aplicação em arquitetura em camadas (Controller, Service, Repository)",
+      "Integrei JPA/Hibernate com banco de dados H2 para testes",
+      "Gerenciei o versionamento de código com Git e GitHub"
+    ]
+  },
+  {
+    "period": "Set. 2024 - Ago. 2025",
+    "role": "Desenvolvimento de PWA",
+    "organization": "UNIT - Universidade Tiradentes",
+    "responsibilities": [
+      "Desenvolvi uma Progressive Web App para avaliação de risco de quedas em ambientes clínicos com suporte offline",
+      "Construí uma Progressive Web App com suporte offline",
+      "Implementei funcionalidades com React, TypeScript e Redux",
+      "Criei componentes reutilizáveis e fluxos de navegação",
+      "Gerenciei estado global e persistência local de dados"
+    ]
+  }
+]

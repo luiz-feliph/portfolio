@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import decoration from "../../assets/icons/decoration.svg";
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <div
       className="relative flex flex-col items-center bg-deep-teal px-[20px] sm:flex-row sm:px-[40px] sm:gap-[32px] sm:justify-between lg:px-[60px]"
@@ -14,19 +17,13 @@ function About() {
 
       <div className="flex-1 text-off-white mt-[64px] mb-[48px] sm:my-[100px] xl:my-[148px] 2xl:my-[200px]">
         <h1 className="cursor-default font-dm-sans text-[60px] font-bold mb-[32px] sm:text-[80px] sm:mb-[48px] lg:text-[100px] lg:mb-[64px] 2xl:text-[120px]">
-          About
+          {t("About")}
         </h1>
         <p
           className="font-bitter text-[14px] font-semibold text-justify hyphens-auto sm:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px]"
           lang="en"
         >
-          Information Systems student with a technical background in IT and
-          hands-on experience in web development and technical support. Focused
-          on building and understanding scalable systems, with a strong ability
-          to analyze complex problems and translate them into efficient,
-          practical solutions. Learns new technologies quickly and approaches
-          challenges with an engineering mindset grounded in real-world
-          application.
+          {t("AboutText")}
         </p>
       </div>
       <div className="cursor-default flex-1 flex w-full justify-center">

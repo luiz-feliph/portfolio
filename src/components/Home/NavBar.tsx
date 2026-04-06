@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import diagonalArrow from "../../assets/icons/diagonal-arrow.svg";
+import { useTranslation } from "react-i18next";
 
 function NavBar() {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleMenu = () => {
@@ -86,15 +89,15 @@ function NavBar() {
               "
             >
               <li>
-                <a 
+                <a
                   className="
                     block p-2
                     md:transition md:hover:-translate-y-1 md:duration-300
-                  " 
-                  href="#about" 
+                  "
+                  href="#about"
                   onClick={handleMenu}
                 >
-                  About
+                  {t("About")}
                 </a>
               </li>
               <li>
@@ -106,31 +109,31 @@ function NavBar() {
                   href="#experience"
                   onClick={handleMenu}
                 >
-                  Experience
+                  {t("Experience")}
                 </a>
               </li>
               <li>
-                <a 
+                <a
                   className="
                     block p-2
                     md:transition md:hover:-translate-y-1 md:duration-300
-                  " 
-                  href="#education" 
+                  "
+                  href="#education"
                   onClick={handleMenu}
                 >
-                  Education
+                  {t("Education")}
                 </a>
               </li>
               <li>
-                <a 
+                <a
                   className="
                     block p-2
                     md:transition md:hover:-translate-y-1 md:duration-300
-                  " 
-                  href="#contact" 
+                  "
+                  href="#contact"
                   onClick={handleMenu}
                 >
-                  Contact
+                  {t("Contact")}
                 </a>
               </li>
             </ul>
@@ -138,10 +141,10 @@ function NavBar() {
             <address className="flex flex-col gap-6 not-italic md:hidden">
               <div>
                 <h3 className="font-dm-sans font-bold text-steel-blue">
-                  EMAIL ADDRESS
+                  {t("EMAIL ADDRESS")}
                 </h3>
                 <p className="font-dm-sans font-bold text-deep-teal">
-                  luizfelipe01.2007@gmail.com
+                  luizfelipe.code@outlook.com
                 </p>
               </div>
 
@@ -177,19 +180,19 @@ function NavBar() {
             </address>
 
             <a
-              href="/documents/luiz-felipe-resume.pdf"
-              download="luiz-felipe-resume.pdf"
+              href={`/resume/${t("resumeURL")}.pdf`}
+              download={t("resumeURL")}
               aria-label="Download resume"
               className="
               max-md:hidden group relative flex items-center gap-2 h-[40px] w-[40px] cursor-pointer bg-steel-blue rounded-full transition-all duration-300 hover:w-[140px]
               "
             >
-              <p 
+              <p
                 className="
                   absolute right-[40px] text-xl text-off-white font-bold opacity-0 group-hover:opacity-100 transition-opacity
                 "
-                >
-                Resume
+              >
+                {t("Resume")}
               </p>
               <img
                 src={diagonalArrow}
