@@ -16,7 +16,7 @@ function StackCard({ data, colorIndex }: StackCardProps) {
 
   return (
     <div
-      className={`flex flex-col items-center bg-${colors[colorIndex].secondaryColor} rounded-lg p-[8px] sm:p-[16px] lg:w-full lg:p-[24px]`}
+      className={`flex flex-col items-center bg-${colors[colorIndex].secondaryColor} rounded-lg p-[8px] cursor-default sm:p-[16px] lg:w-full lg:p-[24px]`}
     >
       <h1
         className={`font-bitter font-bold text-${colors[colorIndex].primaryColor} text-[28px] mb-[6px] sm:text-[34px] sm:mb-[12px] xl:text-[38px] 2xl:text-[42px]`}

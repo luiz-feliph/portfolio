@@ -3,10 +3,10 @@ import { Mail } from "lucide-react";
 function Contact() {
   return (
     <div
-      className="bg-off-white px-[20px] py-[64px] sm:px-[40px] sm:py-[100px] lg:px-[60px] xl:pb-[148px] 2xl:pb-[200px]"
+      className="flex flex-col items-center bg-off-white px-[20px] py-[64px] sm:px-[40px] sm:py-[100px] lg:px-[60px] xl:pb-[148px] 2xl:pb-[200px]"
       id="contact"
     >
-      <h1 className="self-start mb-[32px] font-dm-sans text-[60px] font-bold text-deep-teal cursor-default sm:mb-[48px] sm:text-[80px] lg:mb-[64px] lg:text-[100px] 2xl:text-[120px]">
+      <h1 className="mb-[32px] font-dm-sans text-[60px] font-bold text-deep-teal cursor-default sm:mb-[48px] sm:text-[80px] lg:mb-[64px] lg:text-[100px] 2xl:text-[120px]">
         Let's Talk?
       </h1>
       <p
