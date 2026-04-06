@@ -8,7 +8,7 @@ import Main from "../components/Home/Main";
 
 function Home() {
   return (
-    <div>
+    <div className="bg-off-white">
       <Header />
       <Main />
       <About />

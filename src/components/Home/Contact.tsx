@@ -17,7 +17,7 @@ function Contact() {
         and we can schedule a conversation.
       </p>
       <a
-        href="mailto:luizfelipe01.2007@gmail.com"
+        href="mailto:luizfelipe.code@outlook.com"
         className="inline-flex items-center gap-[8px] bg-deep-teal font-dm-sans text-[18px] font-bold text-off-white px-[18px] py-[8px] rounded-full sm:px-[24px] sm:text-[22px] md:px-[28px] md:text-[24px] lg:px-[32px] lg:text-[28px]
         hover:bg-steel-blue duration-300
         "

@@ -46,20 +46,20 @@ function Projects() {
       <h2 className="text-center font-bitter font-bold text-[32px] text-deep-teal mb-[16px] sm:text-[48px] lg:text-[64px]">
         Projects
       </h2>
-      <div className="flex flex-col items-center bg-off-white h-[250px] rounded-lg px-[8px] xs:h-[300px] sm:h-[400px] custom:h-[544px] custom:flex-row custom:px-0 custom:py-[20px] lg:h-[598px]">
+      <div className="flex flex-col items-center bg-off-white h-[250px] rounded-lg px-[8px] xs:h-[300px] sm:h-[400px] custom-md:h-[544px] custom-md:flex-row custom-md:px-0 custom-md:py-[20px] lg:h-[598px]">
         <button
-          className="flex justify-center w-full cursor-pointer custom:w-auto custom:h-full custom:items-center"
+          className="flex justify-center w-full cursor-pointer custom-md:w-auto custom-md:h-full custom-md:items-center"
           onClick={goToNextSlide}
         >
-          <ChevronUp className="w-[30px] h-[30px] text-[#97A69F] hover:text-[#5f6f69] transition-colors sm:w-[40px] sm:h-[40px] custom:-rotate-90 xl:w-[50px] xl:h-[50px]" />
+          <ChevronUp className="w-[30px] h-[30px] text-[#97A69F] hover:text-[#5f6f69] transition-colors sm:w-[40px] sm:h-[40px] custom-md:-rotate-90 xl:w-[50px] xl:h-[50px]" />
         </button>
         <div
-          className="h-full w-full overflow-y-hidden custom:flex custom:overflow-x-hidden custom:gap-[32px]"
+          className="h-full w-full overflow-y-hidden custom-md:flex custom-md:overflow-x-hidden custom-md:gap-[32px]"
           ref={sliderRef}
         >
           {ProjectJson.map((item, index) => {
             return (
-              <ProjectItem 
+              <ProjectItem
                 key={index}
                 index={`0${index + 1}`}
                 title={item.title}
@@ -68,14 +68,14 @@ function Projects() {
                 technologies={item.technologies}
                 link={item.link}
               />
-            )
+            );
           })}
         </div>
         <button
-          className="flex justify-center w-full cursor-pointer custom:w-auto custom:h-full custom:items-center"
+          className="flex justify-center w-full cursor-pointer custom-md:w-auto custom-md:h-full custom-md:items-center"
           onClick={slidePrev}
         >
-          <ChevronDown className="w-[30px] h-[30px] text-[#97A69F] hover:text-[#5f6f69] transition-colors sm:w-[40px] sm:h-[40px] custom:-rotate-90 xl:w-[50px] xl:h-[50px]" />
+          <ChevronDown className="w-[30px] h-[30px] text-[#97A69F] hover:text-[#5f6f69] transition-colors sm:w-[40px] sm:h-[40px] custom-md:-rotate-90 xl:w-[50px] xl:h-[50px]" />
         </button>
       </div>
     </div>

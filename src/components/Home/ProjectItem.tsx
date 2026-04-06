@@ -19,7 +19,7 @@ function ProjectItem({
   link,
 }: ProjectItemProps) {
   return (
-    <div className="flex flex-col w-full h-full custom:min-w-[640px]">
+    <div className="flex flex-col w-full h-full custom-md:min-w-[640px]">
       <div className="flex items-center gap-[12px]">
         <h1 className="font-dm-mono text-[64px] text-transparent outlined-text cursor-default xs:text-[96px] lg:text-[132px]">
           {index}
@@ -42,7 +42,7 @@ function ProjectItem({
               href={link}
               target="_blank"
             >
-              <ArrowUpRight className="lg:w-[30px] lg:h-[30px]"/>
+              <ArrowUpRight className="lg:w-[30px] lg:h-[30px]" />
             </a>
           </div>
         </div>
@@ -56,9 +56,9 @@ function ProjectItem({
             flex justify-center items-center
             bg-steel-blue w-full h-full rounded-lg gap-[12px]
 
-            custom:gap-[32px]
-            custom:opacity-0 custom:pointer-events-none
-            custom:group-hover:opacity-100 custom:group-hover:pointer-events-auto
+            custom-md:gap-[32px]
+            custom-md:opacity-0 custom-md:pointer-events-none
+            custom-md:group-hover:opacity-100 custom-md:group-hover:pointer-events-auto
 
             transition-opacity duration-300 ease-in-out
           "
@@ -66,7 +66,7 @@ function ProjectItem({
           {technologies.map((item, index) => {
             return (
               <img
-                className="w-[40px] h-[40px] xs:w-[50px] xs:h-[50px] custom:w-[80px] custom:h-[80px] "
+                className="w-[40px] h-[40px] xs:w-[50px] xs:h-[50px] custom-md:w-[80px] custom-md:h-[80px] "
                 src={item.path}
                 alt={item.path}
                 key={index}
