@@ -2,25 +2,25 @@
   {
     "title": "Front-end",
     "images": [
-      { "path": "src/assets/icons/stack-icons/react.svg", "alt": "React" },
-      { "path": "src/assets/icons/stack-icons/typescript.svg", "alt": "TypeScript" },
-      { "path": "src/assets/icons/stack-icons/tailwindcss.svg", "alt": "Tailwind CSS" },
-      { "path": "src/assets/icons/stack-icons/javascript.svg", "alt": "JavaScript" }
+      { "path": "/icons/stack-icons/react.svg", "alt": "React" },
+      { "path": "/icons/stack-icons/typescript.svg", "alt": "TypeScript" },
+      { "path": "/icons/stack-icons/tailwindcss.svg", "alt": "Tailwind CSS" },
+      { "path": "/icons/stack-icons/javascript.svg", "alt": "JavaScript" }
     ]
   },
   {
     "title": "Back-end",
     "images": [
-      { "path": "src/assets/icons/stack-icons/java.svg", "alt": "Java" },
-      { "path": "src/assets/icons/stack-icons/spring.svg", "alt": "Spring" },
-      { "path": "src/assets/icons/stack-icons/spring-boot.svg", "alt": "Spring Boot" }
+      { "path": "/icons/stack-icons/java.svg", "alt": "Java" },
+      { "path": "/icons/stack-icons/spring.svg", "alt": "Spring" },
+      { "path": "/icons/stack-icons/spring-boot.svg", "alt": "Spring Boot" }
     ]
   },
   {
     "title": "Data",
     "images": [
-      { "path": "src/assets/icons/stack-icons/mysql.svg", "alt": "MySQL" },
-      { "path": "src/assets/icons/stack-icons/postgresql.svg", "alt": "PostgreSQL" }
+      { "path": "/icons/stack-icons/mysql.svg", "alt": "MySQL" },
+      { "path": "/icons/stack-icons/postgresql.svg", "alt": "PostgreSQL" }
     ]
   }
 ]

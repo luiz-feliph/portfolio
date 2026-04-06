@@ -46,7 +46,7 @@ function Projects() {
   return (
     <div className="xl:px-[40px] 2xl:px-[80px] 3xl:px-[160px]">
       <h2 className="text-center font-bitter font-bold text-[32px] text-deep-teal mb-[16px] sm:text-[48px] lg:text-[64px]">
-        {t("Projects")}
+        {t("KeyProjects")}
       </h2>
       <div className="flex flex-col items-center bg-off-white h-[250px] rounded-lg px-[8px] xs:h-[300px] sm:h-[400px] custom-md:h-[544px] custom-md:flex-row custom-md:px-0 custom-md:py-[20px] lg:h-[598px]">
         <button

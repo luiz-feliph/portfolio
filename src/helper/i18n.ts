@@ -36,6 +36,7 @@ i18n
           Others: "Others",
           Testing: "Automated Testing",
           DataModeling: "Data Modeling",
+          KeyProjects: "Key Projects",
 
           //Education.tsx
           Technical: "Integrated Technical Degree",
@@ -87,6 +88,7 @@ i18n
           Others: "Outros",
           Testing: "Testes Automatizados",
           DataModeling: "Modelagem de Dados",
+          KeyProjects: "Principais Projetos",
 
           //Education.tsx
           Technical: "Técnico Integrado",

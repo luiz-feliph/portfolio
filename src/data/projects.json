@@ -2,66 +2,66 @@
   {
     "title": "Aluggy",
     "year": 2026,
-    "image": "src/assets/images/project-images/aluggy.webp",
+    "image": "images/project-images/aluggy.webp",
     "technologies": [
-      { "path": "src/assets/icons/custom-icons/react.svg", "alt": "React" },
-      { "path": "src/assets/icons/custom-icons/typescript.svg", "alt": "TypeScript" },
-      { "path": "src/assets/icons/stack-icons/java.svg", "alt": "Java" },
-      { "path": "src/assets/icons/stack-icons/spring-boot.svg", "alt": "Spring Boot" },
-      { "path": "src/assets/icons/stack-icons/postgresql.svg", "alt": "PostgreSQL" }
+      { "path": "/icons/custom-icons/react.svg", "alt": "React" },
+      { "path": "/icons/custom-icons/typescript.svg", "alt": "TypeScript" },
+      { "path": "/icons/stack-icons/java.svg", "alt": "Java" },
+      { "path": "/icons/stack-icons/spring-boot.svg", "alt": "Spring Boot" },
+      { "path": "/icons/stack-icons/postgresql.svg", "alt": "PostgreSQL" }
     ],
     "link": "http://aluggyapp.com.br/"
   },
   {
     "title": "Webservice",
     "year": 2026,
-    "image": "src/assets/images/project-images/Webservice.webp",
+    "image": "/images/project-images/Webservice.webp",
     "technologies": [
-      { "path": "src/assets/icons/stack-icons/java.svg", "alt": "Java" },
-      { "path": "src/assets/icons/stack-icons/spring-boot.svg", "alt": "Spring Boot" }
+      { "path": "/icons/stack-icons/java.svg", "alt": "Java" },
+      { "path": "/icons/stack-icons/spring-boot.svg", "alt": "Spring Boot" }
     ],
     "link": "https://github.com/luiz-feliph/springboot-webservice-jpa"
   },
   {
     "title": "BARQ APP",
     "year": 2025,
-    "image": "src/assets/images/project-images/BARQ.webp",
+    "image": "/images/project-images/BARQ.webp",
     "technologies": [
-      { "path": "src/assets/icons/custom-icons/react.svg", "alt": "React" },
-      { "path": "src/assets/icons/custom-icons/typescript.svg", "alt": "TypeScript" },
-      { "path": "src/assets/icons/custom-icons/tailwindcss.svg", "alt": "Tailwind CSS" }
+      { "path": "/icons/custom-icons/react.svg", "alt": "React" },
+      { "path": "/icons/custom-icons/typescript.svg", "alt": "TypeScript" },
+      { "path": "/icons/custom-icons/tailwindcss.svg", "alt": "Tailwind CSS" }
     ],
     "link": "https://barq-app.vercel.app/"
   },
   {
     "title": "Auth Module TDD",
     "year": 2026,
-    "image": "src/assets/images/project-images/auth-module.webp",
+    "image": "/images/project-images/auth-module.webp",
     "technologies": [
-      { "path": "src/assets/icons/custom-icons/cpp.svg", "alt": "C++" },
-      { "path": "src/assets/icons/custom-icons/TDD.svg", "alt": "TDD" }
+      { "path": "/icons/custom-icons/cpp.svg", "alt": "C++" },
+      { "path": "/icons/custom-icons/TDD.svg", "alt": "TDD" }
     ],
     "link": "https://github.com/luiz-feliph/cpp-auth-module-tdd"
   },
   {
     "title": "Pizzaria Menu",
     "year": 2025,
-    "image": "src/assets/images/project-images/pizzaria-menu.webp",
+    "image": "/images/project-images/pizzaria-menu.webp",
     "technologies": [
-      { "path": "src/assets/icons/custom-icons/react.svg", "alt": "React" },
-      { "path": "src/assets/icons/custom-icons/typescript.svg", "alt": "TypeScript" },
-      { "path": "src/assets/icons/custom-icons/tailwindcss.svg", "alt": "Tailwind CSS" }
+      { "path": "/icons/custom-icons/react.svg", "alt": "React" },
+      { "path": "/icons/custom-icons/typescript.svg", "alt": "TypeScript" },
+      { "path": "/icons/custom-icons/tailwindcss.svg", "alt": "Tailwind CSS" }
     ],
     "link": "https://github.com/luiz-feliph/pizzaria-menu"
   },
   {
     "title": "BMI Calculator",
     "year": 2025,
-    "image": "src/assets/images/project-images/bmi-calculator.webp",
+    "image": "/images/project-images/bmi-calculator.webp",
     "technologies": [
-      { "path": "src/assets/icons/custom-icons/react.svg", "alt": "React" },
-      { "path": "src/assets/icons/custom-icons/typescript.svg", "alt": "TypeScript" },
-      { "path": "src/assets/icons/custom-icons/tailwindcss.svg", "alt": "Tailwind CSS" }
+      { "path": "/icons/custom-icons/react.svg", "alt": "React" },
+      { "path": "/icons/custom-icons/typescript.svg", "alt": "TypeScript" },
+      { "path": "/icons/custom-icons/tailwindcss.svg", "alt": "Tailwind CSS" }
     ],
     "link": "https://github.com/luiz-feliph/bmi-calculator"
   }
