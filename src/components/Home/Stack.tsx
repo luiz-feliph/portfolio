@@ -17,7 +17,7 @@ function Stack() {
         {t("Others")}:
         <span className="text-steel-blue lg:text-light-sage">
           {" "}
-          Git/GitHub | Agile | TDD | {t("Testing")} | Rest APIs | Figma | {t("DataModeling")}
+          Git/GitHub | GitHub Actions | Git Flow | Conventional Commits | Agile | CI/CD | TDD | {t("Testing")} | Rest APIs | Figma | {t("DataModeling")} | Vercel | Postman
         </span>
       </div>
     </div>

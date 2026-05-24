@@ -12,7 +12,7 @@ i18n
         translation: {
           // NavBar.tsx and Header.tsx
           Resume: "Resume",
-          resumeURL: "Luiz_Felipe_Junior_Full_Stack_Developer",
+          resumeURL: "Luiz_Felipe_Full_Stack_Developer",
           About: "About",
           Experience: "Experience",
           Education: "Education",
@@ -64,7 +64,7 @@ i18n
         translation: {
           // NavBar.tsx and Header.tsx
           Resume: "Currículo",
-          resumeURL: "Luiz_Felipe_Desenvolvedor_Full_Stack_Junior",
+          resumeURL: "Luiz_Felipe_Desenvolvedor_Full_Stack",
           About: "Sobre",
           Experience: "Experiência",
           Education: "Formação",
