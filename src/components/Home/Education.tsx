@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Reveal from "../Reveal";
 import EducationCard from "./EducationCard";
 import { Languages, BookCheck } from "lucide-react";
 
@@ -10,11 +11,13 @@ function Education() {
       className="flex flex-col items-center gap-[32px] cursor-default bg-deep-teal px-[20px] py-[64px] sm:px-[40px] sm:py-[100px] lg:px-[60px] xl:pb-[148px] 2xl:pb-[200px]"
       id="education"
     >
-      <h1 className="self-start mb-[32px] font-dm-sans text-[60px] font-bold text-off-white sm:mb-[48px] sm:text-[80px] lg:mb-[64px] lg:text-[100px] 2xl:text-[120px]">
-        {t("Education")}
-      </h1>
+      <Reveal>
+        <h2 className="self-start mb-[32px] font-dm-sans text-[60px] font-bold text-off-white sm:mb-[48px] sm:text-[80px] lg:mb-[64px] lg:text-[100px] 2xl:text-[120px]">
+          {t("Education")}
+        </h2>
+      </Reveal>
 
-      <div className="flex flex-col gap-[48px]">
+      <Reveal delay={100} className="flex flex-col gap-[48px]">
         <div className="flex flex-col gap-[20px] md:flex-row lg:gap-[32px] 2xl:gap-[48px]">
           <EducationCard
             period="2022-2025"
@@ -39,9 +42,9 @@ function Education() {
             </div>
 
             <div>
-              <h2 className="mb-[6px] font-dm-sans text-[36px] font-bold sm:text-[48px] lg:text-[64px]">
+              <h3 className="mb-[6px] font-dm-sans text-[36px] font-bold sm:text-[48px] lg:text-[64px]">
                 {t("Languages")}
-              </h2>
+              </h3>
 
               <ul className="font-bitter text-[20px] sm:text-[24px] lg:text-[28px]">
                 <li>
@@ -60,9 +63,9 @@ function Education() {
             </div>
 
             <div>
-              <h2 className="mb-[6px] font-dm-sans text-[36px] font-bold sm:text-[48px] lg:text-[64px]">
+              <h3 className="mb-[6px] font-dm-sans text-[36px] font-bold sm:text-[48px] lg:text-[64px]">
                 {t("Courses")}
-              </h2>
+              </h3>
 
               <ul className="font-bitter text-[20px] sm:text-[24px] lg:text-[28px]">
                 <li>
@@ -75,7 +78,7 @@ function Education() {
             </div>
           </div>
         </div>
-      </div>
+      </Reveal>
     </div>
   );
 }

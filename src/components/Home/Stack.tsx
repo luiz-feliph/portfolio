@@ -13,13 +13,13 @@ function Stack() {
           return <StackCard data={item} colorIndex={index} key={index} />;
         })}
       </div>
-      <div className="font-dm-sans font-semibold text-[16px] text-deep-teal text-justify hyphens-auto sm:text-[20px] lg:text-[24px] lg:bg-deep-teal lg:text-off-white lg:rounded-lg lg:px-[32px] lg:py-[48px]">
+      <p className="font-dm-sans font-semibold text-[16px] text-deep-teal text-justify hyphens-auto sm:text-[20px] lg:text-[24px] lg:bg-deep-teal lg:text-off-white lg:rounded-lg lg:px-[32px] lg:py-[48px]">
         {t("Others")}:
         <span className="text-steel-blue lg:text-light-sage">
           {" "}
           Git/GitHub | GitHub Actions | Git Flow | Conventional Commits | Agile | CI/CD | TDD | {t("Testing")} | Rest APIs | Figma | {t("DataModeling")} | Vercel | Postman
         </span>
-      </div>
+      </p>
     </div>
   );
 }

@@ -3,11 +3,12 @@ import NavBar from "./NavBar"
 
 function Header() {
   const { t } = useTranslation();
-  
 
   return (
     <header className="flex items-center bg-off-white h-[80px] px-[20px] lg:px-[40px]">
-      <h3 className="font-bitter text-steel-blue min-w-full md:hidden">{t("Full Stack Developer")}</h3>
+      <span className="font-bitter text-lg font-bold text-steel-blue md:hidden">
+        {t("Full Stack Developer")}
+      </span>
       <NavBar />
     </header>
   )

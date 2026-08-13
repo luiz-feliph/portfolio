@@ -4,6 +4,25 @@
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 @theme {
   --breakpoint-xs: 32rem;
   --breakpoint-3xl: 115rem;
@@ -20,6 +39,21 @@
   --color-muted-teal: rgb(111, 135, 133); /* 4 */
   --color-steel-blue: rgb(75, 103, 110); /* 5 */
   --color-deep-teal: rgb(47, 72, 88); /* 6 */
+}
+
+@layer base {
+  :focus-visible {
+    outline: 3px solid var(--color-deep-teal);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  #about,
+  #experience,
+  #education,
+  #contact {
+    scroll-margin-top: 64px;
+  }
 }
 
 @layer utilities {
@@ -58,9 +92,98 @@
     -webkit-text-stroke-color: var(--color-deep-teal);
   }
 
+  .nav-link {
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 0;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-link:hover::after,
+  .nav-link:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nav-link::after {
+      transition: none;
+    }
+  }
+
   @media (min-width: 500px) {
     .outlined-text {
       -webkit-text-stroke-width: 2px;
+    }
+  }
+
+  /* Scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-100 {
+    transition-delay: 100ms;
+  }
+
+  .reveal-delay-200 {
+    transition-delay: 200ms;
+  }
+
+  .reveal-delay-300 {
+    transition-delay: 300ms;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  /* Skill bars: both grow toward the center, collide at 50% each,
+     then settle into their real proportions (back 70%, front 30%) */
+  @keyframes skill-bar-back {
+    0% {
+      height: 0%;
+    }
+    50% {
+      height: 50%;
+    }
+    100% {
+      height: 70%;
+    }
+  }
+
+  @keyframes skill-bar-front {
+    0% {
+      height: 0%;
+    }
+    50% {
+      height: 50%;
+    }
+    100% {
+      height: 30%;
     }
   }
 }

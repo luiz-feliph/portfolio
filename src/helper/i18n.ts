@@ -13,6 +13,10 @@ i18n
           // NavBar.tsx and Header.tsx
           Resume: "Resume",
           resumeURL: "Luiz_Felipe_Full_Stack_Developer",
+          ToggleMenu: "Open navigation menu",
+          MainNavigation: "Main navigation",
+          SwitchLanguage: "Switch language",
+          DownloadResume: "Download resume",
           About: "About",
           Experience: "Experience",
           Education: "Education",
@@ -37,6 +41,10 @@ i18n
           Testing: "Automated Testing",
           DataModeling: "Data Modeling",
           KeyProjects: "Key Projects",
+          PreviousProject: "Previous project",
+          NextProject: "Next project",
+          OpenProject: "Open project",
+          ProjectScreenshot: "project screenshot",
 
           //Education.tsx
           Technical: "Integrated Technical Degree",
@@ -57,7 +65,11 @@ i18n
 
           //Footer.tsx
           SocialMedia: "Social Media",
-          LocalTime: "Local Time"
+          LocalTime: "Local Time",
+
+          //Document
+          documentTitle: "Luiz Felipe | Full Stack Developer",
+          SkipToContent: "Skip to content"
         }
       },
       pt: {
@@ -65,12 +77,16 @@ i18n
           // NavBar.tsx and Header.tsx
           Resume: "Currículo",
           resumeURL: "Luiz_Felipe_Desenvolvedor_Full_Stack",
+          ToggleMenu: "Abrir menu de navegação",
+          MainNavigation: "Navegação principal",
+          SwitchLanguage: "Trocar idioma",
+          DownloadResume: "Baixar currículo",
           About: "Sobre",
           Experience: "Experiência",
           Education: "Formação",
           Contact: "Contato",
           "Full Stack Developer": "Desenvolvedor Full Stack",
-          "EMAIL ADDRESS": "ENDEREÇO DE E-MAIL ",
+          "EMAIL ADDRESS": "ENDEREÇO DE E-MAIL",
 
           //Main.tsx
           Full: "Dev.",
@@ -89,6 +105,10 @@ i18n
           Testing: "Testes Automatizados",
           DataModeling: "Modelagem de Dados",
           KeyProjects: "Principais Projetos",
+          PreviousProject: "Projeto anterior",
+          NextProject: "Próximo projeto",
+          OpenProject: "Abrir projeto",
+          ProjectScreenshot: "captura de tela do projeto",
 
           //Education.tsx
           Technical: "Técnico Integrado",
@@ -109,7 +129,11 @@ i18n
 
           //Footer.tsx
           SocialMedia: "Redes Sociais",
-          LocalTime: "Horário Local"
+          LocalTime: "Horário Local",
+
+          //Document
+          documentTitle: "Luiz Felipe | Desenvolvedor Full Stack",
+          SkipToContent: "Pular para o conteúdo"
         }
       }
     }

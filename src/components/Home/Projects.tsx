@@ -1,21 +1,22 @@
 import { ChevronUp, ChevronDown } from "lucide-react";
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import ProjectItem from "./ProjectItem";
 import ProjectJson from "../../data/projects.json";
-import { useTranslation } from "react-i18next";
 
 function Projects() {
   const { t } = useTranslation();
-  const [index, setIndex] = useState<number>(0);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
   const sliderRef = useRef<HTMLDivElement>(null);
 
-  const goToNextSlide = () => {
+  const goToPrevious = () => {
     if (!sliderRef.current) return;
 
     const sliderElement = sliderRef.current;
     const slides = sliderElement.children;
 
-    const nextIndex = index - 1 < 0 ? slides.length - 1 : index - 1;
+    const nextIndex =
+      activeIndex - 1 < 0 ? slides.length - 1 : activeIndex - 1;
 
     slides[nextIndex].scrollIntoView({
       behavior: "smooth",
@@ -23,16 +24,16 @@ function Projects() {
       inline: "center",
     });
 
-    setIndex(nextIndex);
+    setActiveIndex(nextIndex);
   };
 
-  const slidePrev = () => {
+  const goToNext = () => {
     if (!sliderRef.current) return;
 
     const sliderElement = sliderRef.current;
     const slides = sliderElement.children;
 
-    const nextIndex = index + 1 >= slides.length ? 0 : index + 1;
+    const nextIndex = activeIndex + 1 >= slides.length ? 0 : activeIndex + 1;
 
     slides[nextIndex].scrollIntoView({
       behavior: "smooth",
@@ -40,7 +41,7 @@ function Projects() {
       inline: "center",
     });
 
-    setIndex(nextIndex);
+    setActiveIndex(nextIndex);
   };
 
   return (
@@ -50,8 +51,9 @@ function Projects() {
       </h2>
       <div className="flex flex-col items-center bg-off-white h-[250px] rounded-lg px-[8px] xs:h-[300px] sm:h-[400px] custom-md:h-[544px] custom-md:flex-row custom-md:px-0 custom-md:py-[20px] lg:h-[598px]">
         <button
+          aria-label={t("PreviousProject")}
           className="flex justify-center w-full cursor-pointer custom-md:w-auto custom-md:h-full custom-md:items-center"
-          onClick={goToNextSlide}
+          onClick={goToPrevious}
         >
           <ChevronUp className="w-[30px] h-[30px] text-[#97A69F] hover:text-[#5f6f69] transition-colors sm:w-[40px] sm:h-[40px] custom-md:-rotate-90 xl:w-[50px] xl:h-[50px]" />
         </button>
@@ -59,11 +61,11 @@ function Projects() {
           className="h-full w-full overflow-y-hidden custom-md:flex custom-md:overflow-x-hidden custom-md:gap-[32px]"
           ref={sliderRef}
         >
-          {ProjectJson.map((item, index) => {
+          {ProjectJson.map((item, position) => {
             return (
               <ProjectItem
-                key={index}
-                index={`0${index + 1}`}
+                key={position}
+                index={`0${position + 1}`}
                 title={item.title}
                 year={item.year}
                 image={item.image}
@@ -74,8 +76,9 @@ function Projects() {
           })}
         </div>
         <button
+          aria-label={t("NextProject")}
           className="flex justify-center w-full cursor-pointer custom-md:w-auto custom-md:h-full custom-md:items-center"
-          onClick={slidePrev}
+          onClick={goToNext}
         >
           <ChevronDown className="w-[30px] h-[30px] text-[#97A69F] hover:text-[#5f6f69] transition-colors sm:w-[40px] sm:h-[40px] custom-md:-rotate-90 xl:w-[50px] xl:h-[50px]" />
         </button>
